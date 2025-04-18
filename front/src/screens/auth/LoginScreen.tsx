@@ -1,12 +1,14 @@
 import React, {useRef} from "react";
 import {SafeAreaView, StyleSheet, TextInput, View} from "react-native";
-import InputField from "../../components/InputField.tsx";
-import CustomButton from "../../components/CustomButton.tsx";
-import useForm from "../../hooks/useForm.ts";
-import {validateLogin} from "../../utils";
+import InputField from "@/components/InputField.tsx";
+import CustomButton from "@/components/CustomButton.tsx";
+import useForm from "@/hooks/useForm.ts";
+import {validateLogin} from "@/utils";
+import useAuth from "@/hooks/quries/useAuth.ts";
 
 function LoginScreen() {
     const passwordRef = useRef<TextInput | null>(null);
+    const {loginMutation} = useAuth();
     const login = useForm({
         initialValue: {
             email: '',
@@ -16,7 +18,7 @@ function LoginScreen() {
     });
 
     const handleSubmit = () => {
-        console.log('values', login.values);
+        loginMutation.mutate(login.values);
     };
 
     return (

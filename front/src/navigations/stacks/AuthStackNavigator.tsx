@@ -1,9 +1,9 @@
 import React from "react";
 import {createStackNavigator} from "@react-navigation/stack";
-import LoginScreen from "../../screens/auth/LoginScreen.tsx";
-import AuthHomeScreen from "../../screens/auth/AuthHomeScreen.tsx";
-import {authNavigations} from "../../constants";
-import SignUpScreen from "../../screens/auth/SignUpScreen.tsx";
+import LoginScreen from "@/screens/auth/LoginScreen.tsx";
+import AuthHomeScreen from "@/screens/auth/AuthHomeScreen.tsx";
+import {authNavigations} from "@/constants";
+import SignUpScreen from "@/screens/auth/SignUpScreen.tsx";
 
 export type AuthStackParamList = {
     [authNavigations.AUTH]: undefined;

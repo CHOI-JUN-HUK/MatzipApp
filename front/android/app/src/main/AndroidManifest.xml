@@ -1,6 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
     <application
             android:name=".MainApplication"
@@ -9,11 +12,11 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:allowBackup="false"
             android:theme="@style/AppTheme"
-            android:supportsRtl="true"
-            android:usesCleartextTraffic="true">
+            android:supportsRtl="true">
         <meta-data
                 android:name="com.google.android.geo.API_KEY"
-                android:value="AIzaSyDTVTAAwB4DHmSKfd-BO8Z0mN9XoJC1Rl4"/>
+                android:value="${googleMapApiKey}"/>
+
         <activity
                 android:name=".MainActivity"
                 android:label="@string/app_name"

@@ -17,15 +17,14 @@ function AuthStackNavigator() {
 
     return (
         <Stack.Navigator
-            screenOptions=
+            screenOptions={
                 {
-                    {
-                        cardStyle: {backgroundColor: 'white'},
-                        headerStyle: {backgroundColor: 'white', shadowColor: 'gray'},
-                        headerTitleStyle: {fontSize: 15},
-                        headerTintColor: 'black',
-                    }
+                    cardStyle: {backgroundColor: 'white'},
+                    headerStyle: {backgroundColor: 'white', shadowColor: 'gray'},
+                    headerTitleStyle: {fontSize: 15},
+                    headerTintColor: 'black',
                 }
+            }
         >
             <Stack.Screen name={authNavigations.AUTH} component={AuthHomeScreen}
                           options={{headerTitle: '', headerShown: false}}/>

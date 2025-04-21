@@ -15,7 +15,7 @@ function AuthHomeScreen({navigation}: AuthHomeProps) {
                 <Image
                     resizeMode='contain'
                     style={styles.image}
-                    source={require('../../assets/matzip.png')}
+                    source={require('../../assets/images/matzip.png')}
                 />
             </View>
             <View style={styles.buttonContainer}>

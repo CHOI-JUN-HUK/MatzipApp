@@ -31,4 +31,17 @@ const validateSignUp = (values: UserInformation & { passwordConfirm: string }) =
     return signUpErrors;
 };
 
-export {validateLogin, validateSignUp};
+function validateAddPost(values: { title: string }) {
+    const errors = {
+        title: '',
+        description: ''
+    }
+
+    if (values.title.trim() === '') {
+        errors.title = '제목은 1~30자 이내로 입력 해주세요.';
+    }
+
+    return errors;
+}
+
+export {validateLogin, validateSignUp, validateAddPost};

@@ -12,6 +12,12 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		17606D662DB6670E000B989A /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17606D632DB6670E000B989A /* Ionicons.ttf */; };
+		17606D672DB6670E000B989A /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17606D652DB6670E000B989A /* Octicons.ttf */; };
+		17606D682DB6670E000B989A /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17606D642DB6670E000B989A /* MaterialIcons.ttf */; };
+		17606D692DB6670E000B989A /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17606D632DB6670E000B989A /* Ionicons.ttf */; };
+		17606D6A2DB6670E000B989A /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17606D652DB6670E000B989A /* Octicons.ttf */; };
+		17606D6B2DB6670E000B989A /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17606D642DB6670E000B989A /* MaterialIcons.ttf */; };
 		3761086F76E35FBA1D65FCAB /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		7699B88040F8A987B510C191 /* libPods-MatzipApp-MatzipAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-MatzipApp-MatzipAppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
@@ -38,9 +44,9 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MatzipApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MatzipApp/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = MatzipApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		17ED70872DB39D4C002B60BE /* Ionicons 2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ionicons 2.ttf"; sourceTree = "<group>"; };
-		17ED70882DB39D4C002B60BE /* MaterialIcons 2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaterialIcons 2.ttf"; sourceTree = "<group>"; };
-		17ED70892DB39D4C002B60BE /* Octicons 2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Octicons 2.ttf"; sourceTree = "<group>"; };
+		17606D632DB6670E000B989A /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = SOURCE_ROOT; };
+		17606D642DB6670E000B989A /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = SOURCE_ROOT; };
+		17606D652DB6670E000B989A /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = SOURCE_ROOT; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-MatzipApp-MatzipAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MatzipApp-MatzipAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-MatzipApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatzipApp.debug.xcconfig"; path = "Target Support Files/Pods-MatzipApp/Pods-MatzipApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-MatzipApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatzipApp.release.xcconfig"; path = "Target Support Files/Pods-MatzipApp/Pods-MatzipApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,7 +97,6 @@
 		13B07FAE1A68108700A75B9A /* MatzipApp */ = {
 			isa = PBXGroup;
 			children = (
-				17ED70802DB39944002B60BE /* Fonts */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -103,12 +108,12 @@
 			name = MatzipApp;
 			sourceTree = "<group>";
 		};
-		17ED70802DB39944002B60BE /* Fonts */ = {
+		17606D5F2DB666E7000B989A /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				17ED70872DB39D4C002B60BE /* Ionicons 2.ttf */,
-				17ED70882DB39D4C002B60BE /* MaterialIcons 2.ttf */,
-				17ED70892DB39D4C002B60BE /* Octicons 2.ttf */,
+				17606D632DB6670E000B989A /* Ionicons.ttf */,
+				17606D642DB6670E000B989A /* MaterialIcons.ttf */,
+				17606D652DB6670E000B989A /* Octicons.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				17606D5F2DB666E7000B989A /* Fonts */,
 				13B07FAE1A68108700A75B9A /* MatzipApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* MatzipAppTests */,
@@ -251,6 +257,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17606D662DB6670E000B989A /* Ionicons.ttf in Resources */,
+				17606D672DB6670E000B989A /* Octicons.ttf in Resources */,
+				17606D682DB6670E000B989A /* MaterialIcons.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +267,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17606D692DB6670E000B989A /* Ionicons.ttf in Resources */,
+				17606D6A2DB6670E000B989A /* Octicons.ttf in Resources */,
+				17606D6B2DB6670E000B989A /* MaterialIcons.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3761086F76E35FBA1D65FCAB /* PrivacyInfo.xcprivacy in Resources */,
